@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="chieu-cao">
+<input type="text" id="can-nang">
+<button onclick="tinh()">conver</button>
+<script>
+    function tinh() {
+        let chieucao=parseInt(document.getElementById("chieu-cao").value);
+        let cannang=parseInt(document.getElementById("can-nang").value);
+        let abc=chieucao/(cannang*cannang);
+        if (abc<18)
+            document.write("thieu can");
+        else if (abc<25)
+        document.write("binh thuong");
+        else if (abc<30)
+            document.write("thua can");
+        else
+            document.write("beo")
+
+
+    }
+</script>
+
+</body>
+</html>
